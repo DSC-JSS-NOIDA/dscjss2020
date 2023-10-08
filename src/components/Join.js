@@ -9,7 +9,7 @@ function Join() {
     <>
       <div className="flex__row mb-5">
         <h2
-          style={{ marginLeft: "50px", marginBottom: "-60px" }}
+          style={{     margin: "0 auto", marginBottom: "-25px" }}
           className="join-headline"
         >
           <p>
@@ -18,7 +18,7 @@ function Join() {
           </p>
         </h2>
       </div>
-      <div className="flex__row mb-1">
+      <div className="flex__row">
         <div className="row">
           <div className="col-md-6">
             <JoinSlack />

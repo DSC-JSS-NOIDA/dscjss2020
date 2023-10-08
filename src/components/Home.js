@@ -45,7 +45,7 @@ function Home() {
             rel="noopener noreferrer"
           >
             <button type="button" className="btn btn-primary join-us-btn">
-              <img src={codesandbox} className="codesandbox" alt="icon" />
+              <img src={codesandbox} className="codesandbox" alt="icon"  style={{}}/>
               <p>Join Us</p>
             </button>
           </a>

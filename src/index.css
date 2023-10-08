@@ -96,6 +96,7 @@ a {
   flex-direction: row;
   align-items: center;
   width: 100%;
+  padding: 20px;
   /* border: 1px solid black; */
   justify-content: space-between;
 }
@@ -237,7 +238,10 @@ a {
 
   .flex__row {
     /* height: 100vh; */
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     flex-direction: column;
     justify-content: center;
   }
@@ -245,6 +249,16 @@ a {
     width: 100%;
     /* word-break: break-all; */
     text-align: center;
+  }
+  .page__headline a {
+    margin: 0 auto;
+  }
+  .row {
+    gap: 30px;
+    justify-content: center;
+  }
+  .card {
+    height: auto;
   }
 }
 /* Team Ends */
@@ -358,34 +372,39 @@ a {
   color: white;
   padding: 30px;
   /* margin: 50px; */
+  /* height: 330px; */
+}
+
+.card a {
+  margin-top: auto;
 }
 
 .slack-card {
   background: linear-gradient(103.39deg, #5d1f5f 0%, #4a154b 101.05%);
-  margin-left: 30px;
+  /* margin-left: 30px;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 15px; */
 }
 
 .discord-card {
   background: linear-gradient(102.26deg, #7289da -11.29%, #556ec8 95.67%);
-  margin-right: 30px;
+  /* margin-right: 30px;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 15px; */
 }
 
 .telegram-card {
   background: linear-gradient(102.26deg, #20a0e1 -11.29%, #2890c6 95.67%);
-  margin-left: 30px !important;
+  /* margin-left: 30px !important;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 15px; */
 }
 
 .mail-card {
   background: linear-gradient(103.39deg, #ea4335 0%, #c5221f 101.05%);
-  margin-right: 30px;
+  /* margin-right: 30px;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 15px; */
 }
 
 .btn-join {
@@ -469,14 +488,9 @@ a {
 }
 
 @media only screen and (max-width: 414px) {
-  .club-headline {
-    margin-left: 20px !important;
-  }
-  .join-headline {
-    margin-left: 25px !important;
-  }
   .card {
     margin: 10px !important;
+    height: auto;
   }
   .slack-card {
     background: linear-gradient(103.39deg, #5d1f5f 0%, #4a154b 101.05%);
@@ -525,5 +539,30 @@ a {
     background: #f2f2f2;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+  }
+  .row {
+    grid-gap: 0px;
+    gap: 0px;
+  }
+  .flex__row {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 770px) {
+  .card {
+    height: 330px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .card {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .nav__links {
+    margin: 0px 1vw;
   }
 }
